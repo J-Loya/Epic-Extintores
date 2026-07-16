@@ -1,0 +1,233 @@
+<!DOCTYPE html>
+<html lang="es-MX">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Epic Extintores — Chihuahua</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link href="https://fonts.googleapis.com/css2?family=Oswald:wght@400;500;600;700&family=Inter:wght@400;500;600&family=IBM+Plex+Mono:wght@500;600&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="styles.css">
+</head>
+<body>
+
+<header class="topbar">
+  <div class="topbar__strip">
+    <span>PRESIÓN VERIFICADA · RECARGA EN 24 HRS · SERVICIO EN TODO CHIHUAHUA</span>
+  </div>
+  <nav class="nav">
+    <a href="#top" class="nav__logo">
+      <img src="images/logo.png" alt="Epic Extintores" class="nav__logo-mark">
+      <span class="nav__logo-text">EPIC<em>extintores</em></span>
+    </a>
+    <button class="nav__toggle" id="navToggle" aria-label="Abrir menú" aria-expanded="false">
+      <span></span><span></span><span></span>
+    </button>
+    <ul class="nav__links" id="navLinks">
+      <li><a href="#catalogo">Catálogo</a></li>
+      <li><a href="#sucursales">Sucursales</a></li>
+      <li><a href="#nosotros">Nosotros</a></li>
+      <li><a href="#contacto" class="nav__cta">Contacto</a></li>
+    </ul>
+  </nav>
+</header>
+
+<main id="top">
+
+  <section class="hero">
+    <div class="hero__content">
+      <p class="eyebrow">Distribuidor y recarga certificada · Chihuahua, Chih.</p>
+      <h1>La presión correcta,<br>en el momento correcto.</h1>
+      <p class="hero__lead">Vendemos, recargamos y damos mantenimiento a extintores para casa, negocio e industria. Si tu manómetro no marca la zona verde, nosotros lo dejamos en verde.</p>
+      <div class="hero__actions">
+        <a href="#catalogo" class="btn btn--primary">Ver catálogo</a>
+        <a href="#contacto" class="btn btn--ghost">Pedir cotización</a>
+      </div>
+    </div>
+    <div class="hero__gauge" aria-hidden="true">
+      <svg viewBox="0 0 240 240" class="gauge">
+        <circle cx="120" cy="120" r="108" class="gauge__face"/>
+        <path d="M 120 120 L 120 30 A 90 90 0 0 1 208 145 Z" class="gauge__red"/>
+        <path d="M 120 120 L 208 145 A 90 90 0 0 1 32 145 Z" class="gauge__green"/>
+        <path d="M 120 120 L 32 145 A 90 90 0 0 1 120 30 Z" class="gauge__amber"/>
+        <circle cx="120" cy="120" r="60" class="gauge__inner"/>
+        <text x="120" y="126" class="gauge__label">EN SERVICIO</text>
+        <line x1="120" y1="120" x2="150" y2="55" class="gauge__needle"/>
+        <circle cx="120" cy="120" r="8" class="gauge__pivot"/>
+      </svg>
+    </div>
+  </section>
+
+  <section class="strip-classes">
+    <div class="class-item"><span class="class-badge">A</span><p>Sólidos comunes<br>papel, madera, tela</p></div>
+    <div class="class-item"><span class="class-badge">B</span><p>Líquidos inflamables<br>gasolina, aceite, pintura</p></div>
+    <div class="class-item"><span class="class-badge">C</span><p>Equipo eléctrico<br>energizado</p></div>
+    <div class="class-item"><span class="class-badge">K</span><p>Grasas y aceites<br>de cocina</p></div>
+  </section>
+
+  <section id="catalogo" class="catalogo">
+    <div class="section-head reveal">
+      <p class="eyebrow">Catálogo</p>
+      <h2>Un extintor para cada riesgo</h2>
+      <p class="section-lead">Nuevos y recargados, con garantía y ficha técnica NOM-154.</p>
+    </div>
+
+    <div class="cards">
+      <article class="card reveal">
+        <div class="card__top">
+          <svg viewBox="0 0 100 140" class="icon-ext"><rect x="30" y="35" width="40" height="90" rx="8" class="ext-body ext-body--red"/><rect x="40" y="10" width="20" height="28" rx="4" class="ext-neck"/><circle cx="50" cy="8" r="7" class="ext-cap"/><line x1="50" y1="15" x2="20" y2="40" class="ext-hose"/></svg>
+        </div>
+        <span class="card__classes">A · B · C</span>
+        <h3>Polvo Químico Seco (PQS)</h3>
+        <p>El más versátil. Sofoca fuego en madera, líquidos y equipo eléctrico. Ideal para oficinas, comercios y cocinas.</p>
+        <ul class="specs">
+          <li><span>Capacidades</span><span>4.5 · 6 · 9 kg</span></li>
+          <li><span>Recarga</span><span>desde $--</span></li>
+        </ul>
+      </article>
+
+      <article class="card reveal">
+        <div class="card__top">
+          <svg viewBox="0 0 100 140" class="icon-ext"><rect x="30" y="35" width="40" height="90" rx="8" class="ext-body ext-body--steel"/><rect x="40" y="10" width="20" height="28" rx="4" class="ext-neck"/><circle cx="50" cy="8" r="7" class="ext-cap"/><line x1="50" y1="15" x2="20" y2="40" class="ext-hose"/></svg>
+        </div>
+        <span class="card__classes">B · C</span>
+        <h3>Bióxido de Carbono (CO2)</h3>
+        <p>No deja residuo. Perfecto para cuartos de servidores, transformadores y equipo delicado.</p>
+        <ul class="specs">
+          <li><span>Capacidades</span><span>4.5 kg</span></li>
+          <li><span>Recarga</span><span>desde $--</span></li>
+        </ul>
+      </article>
+
+      <article class="card reveal">
+        <div class="card__top">
+          <svg viewBox="0 0 100 140" class="icon-ext"><rect x="30" y="35" width="40" height="90" rx="8" class="ext-body ext-body--amber"/><rect x="40" y="10" width="20" height="28" rx="4" class="ext-neck"/><circle cx="50" cy="8" r="7" class="ext-cap"/><line x1="50" y1="15" x2="20" y2="40" class="ext-hose"/></svg>
+        </div>
+        <span class="card__classes">A</span>
+        <h3>Agua a Presión</h3>
+        <p>Enfría y apaga fuego en materiales sólidos. Uso común en bodegas y áreas de madera.</p>
+        <ul class="specs">
+          <li><span>Capacidades</span><span>9 L</span></li>
+          <li><span>Recarga</span><span>desde $--</span></li>
+        </ul>
+      </article>
+
+      <article class="card reveal">
+        <div class="card__top">
+          <svg viewBox="0 0 100 140" class="icon-ext"><rect x="30" y="35" width="40" height="90" rx="8" class="ext-body ext-body--red"/><rect x="40" y="10" width="20" height="28" rx="4" class="ext-neck"/><circle cx="50" cy="8" r="7" class="ext-cap"/><line x1="50" y1="15" x2="20" y2="40" class="ext-hose"/></svg>
+        </div>
+        <span class="card__classes">K</span>
+        <h3>Espuma AFFF / Clase K</h3>
+        <p>Diseñado para cocinas industriales y freidoras. Cumple norma para restaurantes.</p>
+        <ul class="specs">
+          <li><span>Capacidades</span><span>6 L</span></li>
+          <li><span>Recarga</span><span>desde $--</span></li>
+        </ul>
+      </article>
+    </div>
+  </section>
+
+  <section id="direccion" class="direccion reveal">
+    <div class="section-head section-head--light">
+      <p class="eyebrow">Dirección</p>
+      <p class="section-lead">Pasa a recargar, comprar o pedir tu revisión anual. Sin cita.</p>
+    </div>
+
+    <div class="branches branches--single">
+      <div class="branch">
+        <span class="branch__tag">Oficina</span>
+        <h3>Epic Extintores</h3>
+        <p class="branch__addr">Villa de Altair 9501, Campo Bello II Etapa, Chihuahua, Chih.</p>
+        <p class="branch__hours">Lun–Vie 9:00–17:00 · Sáb 9:00–14:00</p>
+        <p class="branch__phone">614 130 4438</p>
+      </div>
+    </div>
+  </section>
+
+  <section id="nosotros" class="nosotros reveal">
+    <div class="nosotros__text">
+      <p class="eyebrow">Nosotros</p>
+      <h2>Años cuidando negocios chihuahuenses</h2>
+      <p>Somos una empresa 100% chihuahuense dedicada a la venta, recarga, mantenimiento y capacitación en uso de extintores. Trabajamos con comercios, escuelas, industrias y hogares, siempre bajo la norma NOM-154-SCFI.</p>
+    </div>
+    <div class="nosotros__image">
+      <img src="images/nosotros.jpg" alt="Equipo y taller de Epic Extintores">
+    </div>
+  </section>
+
+  <section id="contacto" class="contacto">
+    <div class="section-head">
+      <p class="eyebrow">Contacto</p>
+      <h2>Pide tu cotización</h2>
+      <p class="section-lead">Responde nuestro equipo en menos de 1 hora hábil.</p>
+    </div>
+    <div class="contacto__grid">
+      <form class="form" onsubmit="return false;">
+        <label>Nombre
+          <input type="text" placeholder="Tu nombre">
+        </label>
+        <label>Teléfono
+          <input type="tel" placeholder="614 000 0000">
+        </label>
+        <label>¿Qué necesitas?
+          <select>
+            <option>Comprar extintor nuevo</option>
+            <option>Recarga</option>
+            <option>Mantenimiento anual</option>
+            <option>Capacitación</option>
+          </select>
+        </label>
+        <label>Mensaje
+          <textarea rows="4" placeholder="Cuéntanos qué necesitas"></textarea>
+        </label>
+        <button type="submit" class="btn btn--primary">Enviar solicitud</button>
+      </form>
+      <div class="contacto__info">
+        <div class="info-block">
+          <span class="info-block__label">Teléfono</span>
+          <span class="info-block__value">614 130 4438</span>
+        </div>
+        <div class="info-block">
+          <span class="info-block__label">Correo</span>
+          <span class="info-block__value">epic.extintores@gmail.com</span>
+        </div>
+        <div class="info-block">
+          <span class="info-block__label">Emergencias</span>
+          <span class="info-block__value">Bomberos 911</span>
+        </div>
+      </div>
+    </div>
+  </section>
+
+</main>
+
+<footer class="footer">
+  <span>© 2026 Epic Extintores · Chihuahua, Chih.</span>
+  <span>NOM-154-SCFI-2005</span>
+</footer>
+
+<script>
+  const navToggle = document.getElementById('navToggle');
+  const navLinks = document.getElementById('navLinks');
+  navToggle.addEventListener('click', () => {
+    const open = navLinks.classList.toggle('is-open');
+    navToggle.setAttribute('aria-expanded', open);
+  });
+  navLinks.querySelectorAll('a').forEach(a => a.addEventListener('click', () => {
+    navLinks.classList.remove('is-open');
+    navToggle.setAttribute('aria-expanded', 'false');
+  }));
+
+  const revealItems = document.querySelectorAll('.reveal');
+  const io = new IntersectionObserver((entries) => {
+    entries.forEach((entry, i) => {
+      if (entry.isIntersecting){
+        entry.target.style.transitionDelay = (i % 4) * 70 + 'ms';
+        entry.target.classList.add('is-visible');
+        io.unobserve(entry.target);
+      }
+    });
+  }, { threshold: 0.15 });
+  revealItems.forEach(el => io.observe(el));
+</script>
+</body>
+</html>

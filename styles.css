@@ -329,19 +329,20 @@ img{max-width:100%; display:block;}
 .pricing__table tbody tr:last-child{border-bottom:none;}
 .pricing__table td:last-child{font-family:var(--mono); font-weight:600; color:var(--epic-red);}
 .pricing__group td{
-  padding:0.65rem 2rem 0.3rem;
+  padding:0.65rem 2rem 0.5rem;
   font-family:var(--mono);
-  font-size:0.66rem;
-  font-weight:600;
+  font-size:0.7rem;
+  font-weight:700;
   letter-spacing:0.12em;
   text-transform:uppercase;
-  color:var(--white);
+  text-align:center;
+  color:var(--carbon);
   border-bottom:none;
 }
 .pricing__group:first-of-type td{padding-top:0.65rem;}
-.pricing__group--red td{background:var(--epic-red);}
-.pricing__group--steel td{background:var(--steel);}
-.pricing__group--amber td{background:var(--amber); color:var(--carbon);}
+.pricing__group--red td{background:#FBE3E5;}
+.pricing__group--steel td{background:#E8EBEC;}
+.pricing__group--amber td{background:#FBEACB;}
 
 .pricing__group--red ~ tr:not(.pricing__group) td:last-child{color:var(--epic-red);}
 .pricing__group--steel ~ tr:not(.pricing__group) td:last-child{color:var(--steel);}

@@ -276,44 +276,70 @@ img{max-width:100%; display:block;}
 .specs li span:last-child{color:var(--carbon); font-weight:600;}
 
 /* ---------- Tabla de precios ---------- */
-.pricing{
+.pricing-wrap{
   max-width:var(--max);
   margin:0 auto;
   padding:0 1.5rem 5rem;
+  display:flex;
+  justify-content:center;
 }
-.pricing__head{margin-bottom:1.2rem;}
+.pricing{
+  width:100%;
+  max-width:640px;
+  background:var(--white);
+  border:1px solid var(--line);
+  border-radius:8px;
+  box-shadow:0 18px 40px rgba(26,29,31,0.07);
+  overflow:hidden;
+}
+.pricing__head{
+  padding:1.8rem 2rem 1.4rem;
+  text-align:center;
+  border-bottom:3px solid var(--carbon);
+}
+.pricing__head .eyebrow{margin-bottom:0.3rem;}
 .pricing__head h3{
-  font-size:1.3rem;
+  font-size:1.5rem;
   margin-bottom:0.4rem;
 }
-.pricing__head p{color:var(--steel); font-family:var(--mono); font-size:0.8rem;}
+.pricing__head p{color:var(--steel); font-family:var(--mono); font-size:0.78rem; letter-spacing:0.03em;}
+.pricing{overflow-x:auto;}
 .pricing__table{
   width:100%;
   border-collapse:collapse;
-  border:1px solid var(--line);
-  border-radius:var(--radius);
-  overflow:hidden;
   min-width:420px;
 }
-.pricing{overflow-x:auto;}
 .pricing__table th, .pricing__table td{
   text-align:left;
-  padding:0.85rem 1.1rem;
-  font-size:0.88rem;
-  border-bottom:1px solid var(--line);
+  padding:0.8rem 2rem;
+  font-size:0.92rem;
 }
 .pricing__table th{
   font-family:var(--mono);
-  font-size:0.68rem;
-  letter-spacing:0.08em;
+  font-size:0.66rem;
+  letter-spacing:0.1em;
+  text-transform:uppercase;
+  color:var(--steel-light);
+  padding-top:1.2rem;
+  padding-bottom:0.6rem;
+}
+.pricing__table th:last-child, .pricing__table td:last-child{text-align:right;}
+.pricing__table tbody tr{border-bottom:1px solid var(--line);}
+.pricing__table tbody tr:not(.pricing__group):hover{background:#FBF3F2;}
+.pricing__table tbody tr:last-child{border-bottom:none;}
+.pricing__table td:last-child{font-family:var(--mono); font-weight:600; color:var(--epic-red);}
+.pricing__group td{
+  padding:0.65rem 2rem 0.3rem;
+  font-family:var(--mono);
+  font-size:0.66rem;
+  font-weight:600;
+  letter-spacing:0.12em;
   text-transform:uppercase;
   color:var(--white);
   background:var(--carbon);
+  border-bottom:none;
 }
-.pricing__table td:last-child{font-family:var(--mono); font-weight:600;}
-.pricing__table tbody tr:hover{background:var(--white); }
-.pricing__table tbody tr:nth-child(even){background:#FBFAF8;}
-.pricing__table tbody tr:last-child td{border-bottom:none;}
+.pricing__group:first-of-type td{padding-top:0.65rem;}
 
 /* ---------- Sucursales ---------- */
 .direccion{background:var(--carbon);}
@@ -490,6 +516,7 @@ img{max-width:100%; display:block;}
   .nav__cta{margin:0.8rem 1.5rem; width:calc(100% - 3rem); text-align:center;}
   .cards{grid-template-columns:1fr;}
   .strip-classes{grid-template-columns:1fr;}
+  .pricing__table th, .pricing__table td, .pricing__group td{padding-left:1.2rem; padding-right:1.2rem;}
   .class-item{border-left:none; border-top:1px solid rgba(255,255,255,0.12);}
   .class-item:first-child{border-top:none;}
   .footer{flex-direction:column; gap:0.4rem;}

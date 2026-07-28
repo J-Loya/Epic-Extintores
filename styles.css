@@ -275,6 +275,46 @@ img{max-width:100%; display:block;}
 }
 .specs li span:last-child{color:var(--carbon); font-weight:600;}
 
+/* ---------- Tabla de precios ---------- */
+.pricing{
+  max-width:var(--max);
+  margin:0 auto;
+  padding:0 1.5rem 5rem;
+}
+.pricing__head{margin-bottom:1.2rem;}
+.pricing__head h3{
+  font-size:1.3rem;
+  margin-bottom:0.4rem;
+}
+.pricing__head p{color:var(--steel); font-family:var(--mono); font-size:0.8rem;}
+.pricing__table{
+  width:100%;
+  border-collapse:collapse;
+  border:1px solid var(--line);
+  border-radius:var(--radius);
+  overflow:hidden;
+  min-width:420px;
+}
+.pricing{overflow-x:auto;}
+.pricing__table th, .pricing__table td{
+  text-align:left;
+  padding:0.85rem 1.1rem;
+  font-size:0.88rem;
+  border-bottom:1px solid var(--line);
+}
+.pricing__table th{
+  font-family:var(--mono);
+  font-size:0.68rem;
+  letter-spacing:0.08em;
+  text-transform:uppercase;
+  color:var(--white);
+  background:var(--carbon);
+}
+.pricing__table td:last-child{font-family:var(--mono); font-weight:600;}
+.pricing__table tbody tr:hover{background:var(--white); }
+.pricing__table tbody tr:nth-child(even){background:#FBFAF8;}
+.pricing__table tbody tr:last-child td{border-bottom:none;}
+
 /* ---------- Sucursales ---------- */
 .direccion{background:var(--carbon);}
 .branches{

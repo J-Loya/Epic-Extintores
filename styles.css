@@ -336,10 +336,20 @@ img{max-width:100%; display:block;}
   letter-spacing:0.12em;
   text-transform:uppercase;
   color:var(--white);
-  background:var(--carbon);
   border-bottom:none;
 }
 .pricing__group:first-of-type td{padding-top:0.65rem;}
+.pricing__group--red td{background:var(--epic-red);}
+.pricing__group--steel td{background:var(--steel);}
+.pricing__group--amber td{background:var(--amber); color:var(--carbon);}
+
+.pricing__group--red ~ tr:not(.pricing__group) td:last-child{color:var(--epic-red);}
+.pricing__group--steel ~ tr:not(.pricing__group) td:last-child{color:var(--steel);}
+.pricing__group--amber ~ tr:not(.pricing__group) td:last-child{color:#B8791F;}
+
+.pricing__group--red ~ tr:not(.pricing__group):hover{background:#FBF0F0;}
+.pricing__group--steel ~ tr:not(.pricing__group):hover{background:#F2F4F5;}
+.pricing__group--amber ~ tr:not(.pricing__group):hover{background:#FDF6E9;}
 
 /* ---------- Sucursales ---------- */
 .direccion{background:var(--carbon);}
